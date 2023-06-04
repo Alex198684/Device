@@ -1,6 +1,6 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{Iurinov Aleksej}}]({{midgarder}}).
+* Студент: [{{Iurinov Alekse(id2303221)j}}]({{midgarder}}).
 * Наставник: `Неизвестно`.
 
 ---
