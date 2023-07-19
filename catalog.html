@@ -117,12 +117,12 @@
 
       <div class="catalog-product">
       <!-- filter -->
-
-          <h2 class="filter-title">фильтр:</h2>
+        <div class="catalog-wrapper-filter">
+          <h2 class="catalog-product-heading">фильтр:</h2>
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость</legend>
+              <legend class="catalog-filter-legend">Стоимость</legend>
               <button class="range-toggle toggle-min" type="button">
                 <span class="visually-hidden">минимальная цена</span>
               </button>
@@ -138,7 +138,7 @@
             </fieldset>
 
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
+              <legend class="catalog-filter-legend">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -179,7 +179,7 @@
             </fieldset>
 
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
+              <legend class="catalog-filter-legend">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filters-item">
                   <label class="control">
@@ -200,28 +200,39 @@
 
             <button class="button">Показать</button>
           </form>
+        </div>
 
-          <h2 class="filter-title">Сортировка:</h2>
+        <div class="catalog-wrapper-content">
 
-          <ul class="catalog-sorting">
-            <li class="catalog-sorting-item">
-              <a href="#" class="catalog-sorting-link">Популярное</a>
-            </li>
-            <li class="catalog-sorting-item">
-              <a href="#" class="catalog-sorting-link">По цене</a>
-            </li>
-            <li class="catalog-sorting-item">
-              <a href="#" class="catalog-sorting-link">По типу</a>
-            </li>
-          </ul>
+          <div class="catalog-wrapper-content-heading">
+            <h2 class="catalog-product-heading">Сортировка:</h2>
 
-          <button class="select-control-vertically" type="button">
-            <span class="visually-hidden">вверх</span>
-          </button>
-          <button class="select-control-vertically" type="button">
-            <span class="visually-hidden">вниз</span>
-          </button>
-        </section>
+            <ul class="sort-type">
+              <li class="sort-type-item">
+                <a href="#" class="sort-type-link">Популярное</a>
+              </li>
+              <li class="sort-type-item">
+                <a href="#" class="sort-type-link">По цене</a>
+              </li>
+              <li class="sort-type-item">
+                <a href="#" class="sort-type-link">По типу</a>
+              </li>
+            </ul>
+
+            <ul class="sort-direction">
+              <li class="sort-direction-item">
+                <a href="" class="sort-direction-link">
+                  <span class="visually-hidden">Сортировка по убыванию</span>
+                </a>
+              </li>
+              <li class="sort-direction-item">
+                <a href="" class="sort-direction-link">
+                  <span class="visually-hidden">Сортировка по убыванию</span>
+                </a>
+              </li>
+            </ul>
+
+          </div>
 
         <!-- product -->
         <section class="product">
@@ -284,7 +295,10 @@
           </ul>
           <a href="#" class="pagination-button button">Вперед</a>
         </div>
+
+
         </section>
+      </div>
       </div>
 
 
