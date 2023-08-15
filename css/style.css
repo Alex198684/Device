@@ -19,6 +19,17 @@
   font-display: swap;
   src: url(../fonts/raleway/raleway-800.woff2) format(woff2);
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* page */
 .page {
   height: 100%;
@@ -29,6 +40,7 @@
   background-color: #ffffff;
 }
 
+
 /* page-body */
 
 .page-body {
@@ -38,6 +50,10 @@
   display: flex;
   flex-direction: column;
 
+}
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .button {
@@ -51,13 +67,14 @@
 
 /* page-header */
 .page-header {
-  width: 1040px;
-  margin: 0 auto;
+  width: 1060px;
+  margin: 0 auto ;
   padding: 0 60px;
   color: #000000;
   background-color: #FFE17F;
 
 }
+
 
 /* page-main */
 
@@ -99,9 +116,11 @@
 
 .form-search {
   width: 517px;
+  display: flex;
 }
 
 .form-search-input {
+  width: 359px;
   color: #000000;
   background-color: #FFE17F;
   font-family: inherit;
@@ -111,6 +130,7 @@
 
 }
 .button-search {
+  width: 160px;
   color: #000000;
   background-color: #FFE17F;
   font-family: inherit;
@@ -123,11 +143,23 @@
 /* user-menu */
 .user-menu-login {
   width: 231px;
+  margin: 0;
+  padding: 0;
 }
 
 .user-menu {
-  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
 }
+
+.user-menu-item:not(:last-child) {
+  margin-right: 36px;
+}
+
+
 .user-menu-link {
   color: #000000;
   font-family: inherit;
@@ -196,10 +228,17 @@
 .slider-promo {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+.slider-promo-specification {
+
 }
 .slider-promo-specification-discription {
+  padding: 0;
   color: #000000;
   font-size: 36px;
+  text-align: left;
 }
 .slider-promo-specification-title {
   font-size: 16px;
@@ -211,6 +250,7 @@
   width: 76px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 /* category */
@@ -219,6 +259,7 @@
   width: 1160px;
   margin: 0 auto;
   padding: 70 0;
+  margin-bottom: 70px;
 }
 .category-list {
   display: flex;
@@ -246,16 +287,29 @@
 
 .service-container {
   display: flex;
-
 }
 
-.service-button {
+.service-control {
   display: flex;
   flex-direction: column;
   margin-right: 116px;
 }
+.service-contol-button {
+  margin-bottom: 35px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.service-contol-button:last-child {
+  margin: 0;
+}
 .services-list {
   margin: 0;
+  margin-bottom: 70px;
   padding: 0;
   background-color:#F0F0F0;
   list-style: none;
@@ -483,5 +537,8 @@ margin-right: 108px;
 
 .wrapper-user-menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
