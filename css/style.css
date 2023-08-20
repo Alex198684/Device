@@ -33,22 +33,22 @@
 /* page */
 .page {
   height: 100%;
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  color: #444444;
-  background-color: #ffffff;
+
 }
 
 
 /* page-body */
 
 .page-body {
-  width: 1440px;
-  margin: 0 auto;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  min-height: 100%;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
 
 }
 .page-container {
@@ -60,6 +60,7 @@
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 18px;
+  letter-spacing: 3.8px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -83,33 +84,14 @@
 }
 
 
-/* page-footer */
 
-.page-footer {
-  padding: 62px 140px 61px;
-  background-color: #444444;
-  color: #FFFFFF;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.page-footer-middle {
-  display: flex;
-}
-.page-footer-address {
-  width: 250px;
-  margin-right: auto;
-  font-style: normal;
-}
 
 
 .section-heading {
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 50px;
+  line-height: 50px;
 }
 
 /* form-search */
@@ -231,19 +213,32 @@
   list-style-type: none;
 }
 
-.slider-promo-specification {
+.promo-specification-list {
+  display: flex;
+}
 
+.promo-specification-item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 40px;
 }
-.slider-promo-specification-discription {
-  padding: 0;
-  color: #000000;
-  font-size: 36px;
-  text-align: left;
+
+.promo-specification-item:last-child {
+  margin-right: 0;
 }
-.slider-promo-specification-title {
+.promo-specification-term {
   font-size: 16px;
   font-weight: 400;
 }
+
+.promo-specification-definition {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  color: #000000;
+  font-size: 36px;
+}
+
 
 .slider-pagination {
   display: flex;
@@ -281,11 +276,14 @@
 }
 
 /* services */
-.services {
-  padding: 0 140px 72px;
+
+
+.services-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
-.service-container {
+.service-content {
   display: flex;
 }
 
@@ -332,6 +330,17 @@
   width: 520px;
 margin-right: 108px;
 }
+
+.about-discription {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-companies {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
 .companies-item {
   color: #000000;
   font-weight: 700;
@@ -339,10 +348,28 @@ margin-right: 108px;
 .contacts-address {
   font-style: normal;
 }
+
+.contacts-discription {
+  margin: 0;
+  margin-bottom: 30px;
+}
 .contacts-item-title {
   color: #000000;
   font-size: 24px;
   font-weight: 700;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.contacts-item {
+  margin-bottom: 30px;
+}
+.contacts-item-description {
+  margin: 0;
 }
 .contacts-phone {
   color: #444444;
@@ -372,29 +399,40 @@ margin-right: 108px;
 .new-form-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 
 .main-inner {
   width: 1440px;
+  margin: 0 auto;
 }
 .main-inner-header {
   width: 1079px;
-  margin-left: 200px;
-  margin-right: 161px;
-  padding: 0;
+  padding: 35px 161px 35px 200px;
+
 
 
 }
 
+.inner-hedear-title {
+  margin: 0;
+  margin-bottom: 16px;
+}
 .breadcrumbs {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 
 }
 
+.breadcrumbs-item:not(last-child) {
+  margin-right: 36px;
+}
+
 .breadcrumbs-link {
+  display: block;
   color: #000000;
   font-size: 16px;
   text-decoration: none;
@@ -433,32 +471,54 @@ margin-right: 108px;
   opacity: 0.3;
 }
 
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .catalog-wrapper-content {
   display: flex;
   flex-direction: column;
 }
 
 .catalog-wrapper-content-heading {
-  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
 
 .sort-type {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .sort-type-link {
+  display: block;
   text-decoration: none;
   color: #000000;
 }
 
 .sort-direction {
+  display: flex;
+  margin: 0;padding: 0;
   list-style: none;
 }
 
 .sort-direction-link {
+  display: block;
+  padding: 10px 9.5px;
   text-decoration: none;
   color: #000000;
   opacity: 0.2;
+}
+
+.sort-direction-item {
+  width: 30px;
+  height: 30px;
+
 }
 
 .product {
@@ -487,33 +547,72 @@ margin-right: 108px;
   font-weight: normal;
 }
 .button-large {
+  width: 100%;
   font-size: 16px;
   text-align: center;
 }
 .pagination {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   background-color: #EBEBEB;
 }
 .pagination-list {
+  display: flex;
+  width: 200px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.button-large {
-  width: 100%;
 
-}
 .pagination-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
   color: #444444;
   font-size: 16px;
   opacity: 0.3;
   text-decoration: none;
 
 }
+/* page-footer */
 
+.page-footer {
+  padding: 62px 140px 61px;
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer-middle {
+  display: flex;
+  align-items: center;
+}
+.page-footer-address {
+  width: 239px;
+  margin-right: auto;
+  font-style: normal;
+}
 /* footer */
-.footer-menu-list {
-  list-style: none;
+
+
+.footer-menu {
+  display: flex;
+  width: 450px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.footer-menu-item:not(:nth-child(3n)) {
+  margin-right: 35px;
 }
 
 .footer-menu-link {
@@ -530,11 +629,38 @@ margin-right: 108px;
   color: #FFFFFF;
 }
 
-.page-footer-bottom {
-  display: flex;
-  justify-content: space-between;
+.footer-social-list {
+display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style-type: none;
 }
 
+.footer-social-item {
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+.footer-social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+}
+
+.page-footer-bottom {
+  display: flex;
+}
+
+.footer-copyraight {
+  margin-left: 390px;
+}
 .wrapper-user-menu {
   display: flex;
   flex-wrap: wrap;
