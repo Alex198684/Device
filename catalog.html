@@ -13,84 +13,106 @@
 
     <!-- header -->
     <header class="page-header">
-      <a class="header-logo" href="#">
-        <img src="./img/logo-header.svg" width="145" height="36" alt="Логотип интернет магазина Device">
-      </a>
+      <div class="content-wrapper">
+        <a class="header-logo" href="#">
+          <img src="./img/logo-header.svg" width="145" height="36" alt="Логотип интернет магазина Device">
+        </a>
 
-      <div class="wrapper-user-menu">
-        <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="form-search-input" type="search"  placeholder="Текст поиска">
-          <button class="button-search" type="button">Найти</button>
-        </form>
+        <div class="wrapper-user-menu">
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="form-search-input" type="search"  placeholder="Текст поиска">
+            <button class="button-search" type="button">Найти</button>
+          </form>
+        <div class="user-menu">
+          <ul class="user-menu-list user-menu-login">
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">Коля Петухов</a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">Выйти</a>
+            </li>
+          </ul>
 
-        <ul class="user-menu user-menu-login">
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Коля Петухов</a>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Выйти</a>
-          </li>
-        </ul>
+
+          <ul class="user-menu-list user-menu-active">
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">Сравнить</a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">Kорзина</a>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+
+        <!-- nav -->
+        <nav class="header-nav">
+
+          <ul class="main-menu">
 
 
-        <ul class="user-menu">
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Сравнить</a>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">Kорзина</a>
-          </li>
-        </ul>
+              <li class="main-menu-item">
+                <a class="main-menu-link" href="catalog.html">Каталог товаров</a>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu-item">
+                    <ul class="dropdown-menu-submenu">
+                      <li class="dropdown-menu-submenu-item">
+                        <a href="#" class="dropdown-menu-link">Виртуальная
+                          реальность</a>
+                      </li>
+                      <li class="dropdown-menu-submenu-item">
+                        <a href="#" class="dropdown-menu-link">Моноподы
+                          для селфи</a>
+                      </li>
+                      <li class="dropdown-menu-submenu-item">
+                        <a href="#" class="dropdown-menu-link">Экшн-камеры</a>
+                      </li>
+                    </ul>
+
+                  </li>
+
+                  <li class="dropdown-menu-item">
+                    <ul class="dropdown-menu-submenu">
+                      <li class="dropdown-menu-submenu-item">
+                        <a href="#" class="dropdown-menu-link">Фитнес-браслеты</a>
+                      </li>
+                      <li class="dropdown-menu-submenu-item">
+                        <a href="#" class="dropdown-menu-link">Умные часы</a>
+                      </li>
+                    </ul>
+
+                  </li>
+
+                  <li class="dropdown-menu-item">
+                    <ul class="dropdown-menu-submenu">
+                      <li class="dropdown-menu-submenu-item">
+                        <a href="#" class="dropdown-menu-link">Квадрокоптеры</a>
+                      </li>
+                    </ul>
+
+                  </li>
+                </ul>
+              </li>
+
+
+
+              <li class="main-menu-item">
+                <a class="main-menu-link" href="#">Доставка</a>
+              </li>
+              <li class="main-menu-item">
+                <a class="main-menu-link" href="#">Гарантия</a>
+              </li>
+              <li class="main-menu-item">
+                <a class="main-menu-link" href="#">Контакты</a>
+              </li>
+
+          </ul>
+        </nav>
       </div>
 
-      <!-- nav -->
-      <nav class="header-nav">
-
-        <ul class="site-menu">
-
-          <div class="site-menu-left">
-            <li class="site-menu-item">
-              <a class="site-menu-link" href="catalog.html">Каталог товаров</a>
-
-              <ul class="submenu-list">
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Виртуальная
-                    реальность</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Моноподы
-                    для селфи</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Экшн-камеры</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Фитнес-браслеты</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Умные часы</a>
-                </li>
-                <li class="submenu-item">
-                  <a href="#" class="submenu-link">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </li>
-          </div>
-
-          <div class="site-menu-right">
-            <li class="site-menu-item">
-              <a class="site-menu-link" href="#">Доставка</a>
-            </li>
-            <li class="site-menu-item">
-              <a class="site-menu-link" href="#">Гарантия</a>
-            </li>
-            <li class="site-menu-item">
-              <a class="site-menu-link" href="#">Контакты</a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-  </header>
+    </header>
 
 
     <!-- main -->
@@ -115,10 +137,14 @@
       </div>
 
 
-      <div class="catalog-product">
+      <div class="catalog-product content-wrapper">
       <!-- filter -->
-        <div class="catalog-wrapper-filter">
-          <h2 class="catalog-product-heading">фильтр:</h2>
+        <!-- <div class="catalog-wrapper-filter"> -->
+        <div class="catalog-product-filter">
+          <div class="catalog-product-filter-header">
+            <h2 class="catalog-product-heading">фильтр:</h2>
+          </div>
+
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
@@ -200,7 +226,9 @@
 
             <button class="button">Показать</button>
           </form>
+
         </div>
+
 
         <div class="catalog-wrapper-content">
 
@@ -232,6 +260,7 @@
             </ul>
 
           </div>
+
 
         <!-- product -->
         <section class="product">
@@ -298,9 +327,7 @@
 
         </section>
       </div>
-      </div>
-
-
+    </div>
     </main>
 
   <!-- footer -->
